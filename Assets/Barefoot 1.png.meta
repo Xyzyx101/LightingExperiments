@@ -1,0 +1,3445 @@
+fileFormatVersion: 2
+guid: 5072c08dd9675cf4bb888c94f7ae9be5
+timeCreated: 1458044962
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: WalkingDown0
+    21300002: WalkingDown1
+    21300004: WalkingDown2
+    21300006: WalkingDown3
+    21300008: WalkingRight0
+    21300010: WalkingRight1
+    21300012: WalkingRight2
+    21300014: WalkingRight3
+    21300016: WalkingUp0
+    21300018: WalkingUp1
+    21300020: WalkingUp2
+    21300022: WalkingUp3
+    21300024: RunningDown0
+    21300026: RunningDown1
+    21300028: RunningDown2
+    21300030: RunningDown3
+    21300032: RunningRight0
+    21300034: RunningRight1
+    21300036: RunningRight2
+    21300038: RunningRight3
+    21300040: RunningUp0
+    21300042: RunningUp1
+    21300044: RunningUp2
+    21300046: RunningUp3
+    21300048: Dead
+    21300050: PushPullDown0
+    21300052: PushPullDown1
+    21300054: PushPullDown2
+    21300056: PushPullDown3
+    21300058: PushPullRight0
+    21300060: PushPullRight1
+    21300062: PushPullRight2
+    21300064: PushPullRight3
+    21300066: PushPullUp0
+    21300068: PushPullUp1
+    21300070: PushPullUp2
+    21300072: PushPullUp3
+    21300074: SwimmingIdle0
+    21300076: SwimmingIdle1
+    21300078: SwimmingIdle2
+    21300080: SwimmingIdle3
+    21300082: SwimmingDown0
+    21300084: SwimmingDown1
+    21300086: SwimmingDown2
+    21300088: SwimmingDown3
+    21300090: SwimmingRight0
+    21300092: SwimmingRight1
+    21300094: SwimmingRight2
+    21300096: SwimmingRight3
+    21300098: SwimmingUp0
+    21300100: SwimmingUp1
+    21300102: SwimmingUp2
+    21300104: SwimmingUp3
+    21300106: JumpingDown
+    21300108: JumpingRight
+    21300110: JumpingUp
+    21300112: JumpingLeft
+    21300114: PickupDown
+    21300116: PickupRight
+    21300118: PickupUp
+    21300120: PickupLeft
+    21300122: ThrowDown0
+    21300124: ThrowDown1
+    21300126: ThrowRight0
+    21300128: ThrowRight1
+    21300130: ThrowUp0
+    21300132: ThrowUp1
+    21300134: InteractDown
+    21300136: InteractRight
+    21300138: InteractLeft
+    21300140: Interactup
+    21300142: DodgeDown
+    21300144: DodgeRight
+    21300146: DodgeUp
+    21300148: DodgeLeft
+    21300150: Rummage0
+    21300152: Rummage1
+    21300154: Rummage2
+    21300156: Rummage3
+    21300158: RummageNoBag0
+    21300160: RummageNoBag1
+    21300162: RummageNoBag2
+    21300164: RummageNoBag3
+    21300166: RummageNoShoes0
+    21300168: RummageNoShoes1
+    21300170: RummageNoShoes2
+    21300172: RummageNoShoes3
+    21300174: DefendDown
+    21300176: DefendRight
+    21300178: DefendLeft
+    21300180: DefendUp
+    21300182: Climb0
+    21300184: Climb1
+    21300186: SegwayIdle
+    21300188: SegwayDown0
+    21300190: SegwayDown1
+    21300192: SegwayUp0
+    21300194: SegwayUp1
+    21300196: SegwayRight0
+    21300198: SegwayRight1
+    21300200: SegwayDead
+    21300202: BikeIdleDown
+    21300204: BikeDown0
+    21300206: BikeDown1
+    21300208: BikeDown2
+    21300210: BikeDown3
+    21300212: BikeIdleRight
+    21300214: BikeRight0
+    21300216: BikeRight1
+    21300218: BikeRight2
+    21300220: BikeRight3
+    21300222: BikeIdleUp
+    21300224: BikeUp0
+    21300226: BikeUp1
+    21300228: BikeUp2
+    21300230: BikeUp3
+    21300232: BikeDead
+    21300234: Punched
+    21300236: PlayerJumpShadow
+    21300238: HitByLightning0
+    21300240: HitByLightning1
+    21300242: HitByLightning2
+    21300244: HitByLightning3
+    21300246: HitByLightning4
+    21300248: HitByLightning5
+    21300250: HitByLightning6
+    21300252: PlayerDefault_126
+    21300254: PlayerDefault_127
+    21300256: PlayerDefault_128
+    21300258: PlayerDefault_129
+    21300260: PlayerDefault_130
+    21300262: PlayerDefault_131
+    21300264: PlayerDefault_132
+    21300266: PlayerDefault_133
+    21300268: PlayerDefault_134
+    21300270: PlayerDefault_135
+    21300272: PlayerDefault_136
+    21300274: PlayerDefault_137
+    21300276: PlayerDefault_138
+    21300278: PlayerDefault_139
+    21300280: PlayerDefault_140
+    21300282: SkateBoardDown0
+    21300284: SkateBoardDown1
+    21300286: SkateBoardDown2
+    21300288: SkateBoardDown3
+    21300290: SkateBoardDown4
+    21300292: SkateBoardDown5
+    21300294: SkateBoardJumpDown0
+    21300296: SkateBoardJumpDown1
+    21300298: SkateBoardJumpRight0
+    21300300: SkateBoardJumpRight1
+    21300302: SkateBoardJumpUp0
+    21300304: SkateBoardJumpUp1
+    21300306: SkateBoardRight0
+    21300308: SkateBoardRight1
+    21300310: SkateBoardRight2
+    21300312: SkateBoardRight3
+    21300314: SkateBoardRight4
+    21300316: SkateBoardRight5
+    21300318: SkateBoardShadow
+    21300320: SkateBoardUp0
+    21300322: SkateBoardUp1
+    21300324: SkateBoardUp2
+    21300326: SkateBoardUp3
+    21300328: SkateBoardUp4
+    21300330: SkateBoardUp5
+    21300332: SkateBoardDead
+    21300334: DigDown0
+    21300336: DigDown1
+    21300338: DigRight0
+    21300340: DigRight1
+    21300342: DigUp0
+    21300344: DigUp1
+    21300346: ShovelWalkDown0
+    21300348: ShovelWalkDown1
+    21300350: ShovelWalkDown2
+    21300352: ShovelWalkDown3
+    21300354: ShovelWalkRight0
+    21300356: ShovelWalkRight1
+    21300358: ShovelWalkRight2
+    21300360: ShovelWalkRight3
+    21300362: ShovelWalkUp0
+    21300364: ShovelWalkUp1
+    21300366: ShovelWalkUp2
+    21300368: ShovelWalkUp3
+    21300370: ShovelPooWalkDown0
+    21300372: ShovelPooWalkDown1
+    21300374: ShovelPooWalkDown2
+    21300376: ShovelPooWalkDown3
+    21300378: ShovelPooWalkRight0
+    21300380: ShovelPooWalkRight1
+    21300382: ShovelPooWalkRight2
+    21300384: ShovelPooWalkRight3
+    21300386: FallingDown0
+    21300388: FallingDown1
+    21300390: FallingUp0
+    21300392: FallingUp1
+    21300394: SittingDown
+    21300396: SittingRight
+    21300398: SittingUp
+    21300400: Flying0
+    21300402: Flying1
+    21300404: HangingOn0
+    21300406: HangingOn1
+    21300408: CarryingBabayBroDown0
+    21300410: CarryingBabayBroDown1
+    21300412: CarryingBabayBroDown2
+    21300414: CarryingBabayBroDown3
+    21300416: CarryingBabayBroRight0
+    21300418: CarryingBabayBroRight1
+    21300420: CarryingBabayBroRight2
+    21300422: CarryingBabayBroRight3
+    21300424: CarryingBabayBroLeft0
+    21300426: CarryingBabayBroLeft1
+    21300428: CarryingBabayBroLeft2
+    21300430: CarryingBabayBroLeft3
+    21300432: CarryingBabayBroUp0
+    21300434: CarryingBabayBroUp1
+    21300436: CarryingBabayBroUp2
+    21300438: CarryingBabayBroUp3
+    21300440: PushHeavyRight0
+    21300442: PushHeavyRight1
+    21300444: PushHeavyUp0
+    21300446: PushHeavyUp1
+    21300448: PushHeavyDown0
+    21300450: PushHeavyDown1
+    21300452: WalkingBarefootRitght2
+    21300454: WalkingBarefootRitght3
+    21300456: WalkingBarefootUp0
+    21300458: WalkingBarefootUp1
+    21300460: WalkingBarefootUp2
+    21300462: WalkingBarefootUp3
+    21300464: PlayerDefault_232
+    21300466: PlayerDefault_233
+    21300468: PlayerDefault_234
+    21300470: PlayerDefault_235
+    21300472: PlayerDefault_236
+    21300474: PlayerDefault_237
+    21300476: PlayerDefault_238
+    21300478: PlayerDefault_239
+    21300480: PlayerDefault_240
+    21300482: PogoIdle
+    21300484: PogoDown0
+    21300486: PogoDown1
+    21300488: PogoDown2
+    21300490: PogoDown3
+    21300492: PogoUp0
+    21300494: PogoUp1
+    21300496: PogoUp2
+    21300498: PogoUp3
+    21300500: PogoRight0
+    21300502: PogoRight1
+    21300504: PogoRight2
+    21300506: PogoRight3
+    21300508: PogoDead
+    21300510: PlayerDefault_255
+    21300512: PlayerDefault_256
+    21300514: PlayerDefault_257
+    21300516: PlayerDefault_258
+    21300518: PlayerDefault_259
+    21300520: PlayerDefault_260
+    21300522: PlayerDefault_261
+    21300524: PlayerDefault_262
+    21300526: PlayerDefault_263
+    21300528: DeathBySquirrel0
+    21300530: DeathBySquirrel1
+    21300532: DeathBySquirrel2
+    21300534: DeathBySquirrel3
+    21300536: DeathBySquirrel4
+    21300538: DeathBySquirrel5
+    21300540: DeathBySquirrel6
+    21300542: DeathBySquirrel7
+    21300544: DumpingDown_0
+    21300546: DumpingRight_0
+    21300548: DumpingUp_0
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WalkingDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingUp0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingUp1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingUp3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2016
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningUp0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningUp1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RunningUp3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Dead
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1984
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullUp0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullUp1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushPullUp3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingIdle0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingIdle1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingIdle2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingIdle3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingDown0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingDown1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingDown2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingDown3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingRight0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingRight1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingRight2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingRight3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingUp0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingUp1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingUp2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SwimmingUp3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1920
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpingDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1888
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpingRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1888
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpingUp
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1888
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: JumpingLeft
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1888
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PickupDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PickupRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PickupUp
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PickupLeft
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1856
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowRight0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowRight1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowUp0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ThrowUp1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1824
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InteractDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InteractRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1792
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: InteractLeft
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1792
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Interactup
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1792
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DodgeDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1760
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DodgeRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1760
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DodgeUp
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1760
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DodgeLeft
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1760
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rummage0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rummage1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rummage2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Rummage3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RummageNoBag0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RummageNoBag1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RummageNoBag2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: RummageNoBag3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1728
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DefendDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DefendRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1696
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DefendLeft
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1696
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DefendUp
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1696
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Climb0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1664
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Climb1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1664
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayIdle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayDown0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayDown1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayUp0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayUp1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayRight0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayRight1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SegwayDead
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1632
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeIdleDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeDown0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeDown1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeDown2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeDown3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeIdleRight
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeRight0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeRight1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeRight2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeRight3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeIdleUp
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeUp0
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeUp1
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeUp2
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeUp3
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: BikeDead
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1600
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Punched
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1568
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PlayerJumpShadow
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 32
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.3}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HitByLightning6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1504
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDown5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpDown0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpDown1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpRight0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpRight1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpUp0
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardJumpUp1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1440
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardRight5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardShadow
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1408
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardUp5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SkateBoardDead
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1376
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigRight0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigRight1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigUp0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DigUp1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkUp0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkUp1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelWalkUp3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1312
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: ShovelPooWalkRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1280
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FallingDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FallingDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FallingUp0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: FallingUp1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SittingDown
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SittingRight
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: SittingUp
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flying0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1184
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Flying1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1184
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HangingOn0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: HangingOn1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1152
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroDown0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroDown1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroDown2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroDown3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroRight0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroRight1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroRight2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroRight3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroLeft0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroLeft1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroLeft2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroLeft3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroUp0
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroUp1
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroUp2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CarryingBabayBroUp3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1120
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyRight0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyRight1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyUp0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyUp1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyDown0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PushHeavyDown1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootRitght2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootRitght3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootUp0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootUp1
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootUp2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: WalkingBarefootUp3
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1088
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoIdle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoDown0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoDown1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoDown2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoDown3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoUp0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoUp1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoUp2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoUp3
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoRight0
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoRight1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoRight2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoRight3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: PogoDead
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1024
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DeathBySquirrel7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 960
+        width: 32
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DumpingDown_0
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DumpingRight_0
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: DumpingUp_0
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1344
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
