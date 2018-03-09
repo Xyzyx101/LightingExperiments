@@ -106,6 +106,8 @@ float4 frag (Interpolators i) : SV_TARGET {
 		float3 ambient = ShadeSH9(float4(i.normal, 1));
 		color.rgb = dot(color, color) > dot(ambient, ambient) ? color : ambient;// max(color, ambient);
 	#endif
+	//color.rgb = clamp(color.rgb, (float3)0, albedo * saturate(light.color));
+	
 	color.a = 1.f;
 	#if defined(_RENDERING_FADE) || defined(_RENDERING_TRANSPARENT)
 		color.a = alpha;
