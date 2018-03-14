@@ -11,7 +11,7 @@
 		
 		Pass
 		{
-			Blend SrcAlpha OneMinusSrcAlpha
+			Blend One One
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag
@@ -48,14 +48,14 @@
 			{
 				i.uv += _Time.z * float2(0, 1.f);
 				fixed4 col = tex2D(_MainTex, i.uv);
-				col.rgb *= col.a;
+				col.rgb *= 1 - col.a;
 				return col;
 			}
 			ENDCG
 		}
 		Pass
 		{
-			Blend One One
+			Blend OneMinusDstColor  One
 			CGPROGRAM
 			#pragma vertex vert
 			#pragma fragment frag

@@ -9,6 +9,7 @@
 float4 _Tint;
 sampler2D _MainTex;
 float4 _MainTex_ST;
+float4 _MainTex_TexelSize;
 float _Smoothness;
 float _AlphaCutoff;
 
@@ -86,10 +87,19 @@ float4 frag (Interpolators i) : SV_TARGET {
 	i.normal = normalize(i.normal);
 	float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
 
-	float3 halfVector = normalize(light.dir + viewDir);
-	float3 specular = 0;//light.color * pow(DotClamped(halfVector, i.normal), _Smoothness * 100);
-				
-	float3 albedo = tex2D(_MainTex, i.uv).rgb * _Tint.rgb;
+	//float3 halfVector = normalize(light.dir + viewDir);
+	//float3 specular = 0;//light.color * pow(DotClamped(halfVector, i.normal), _Smoothness * 100);
+	
+	// Retro AA filter
+	float2 texel = i.uv*_MainTex_TexelSize.zw;
+	float2 hfw = 0.5*fwidth(texel);
+	float2 fl = floor(texel - 0.5) + 0.5;
+	float2 uv = (fl + smoothstep(0.5 - hfw, 0.5 + hfw, texel - fl))*_MainTex_TexelSize.xy;
+
+	fixed4 albedo = _Tint.rgba*tex2Dgrad(_MainTex, uv, ddx(i.uv), ddy(i.uv));
+	//o.Albedo = c.rgb;
+
+	//float3 albedo = tex2D(_MainTex, i.uv).rgb * _Tint.rgb;
 	#if defined(_RENDERING_TRANSPARENT)
 		albedo *= alpha;
 		// if specular get added back in specular highlight should lower alpha
@@ -106,7 +116,7 @@ float4 frag (Interpolators i) : SV_TARGET {
 		float3 ambient = ShadeSH9(float4(i.normal, 1));
 		color.rgb = dot(color, color) > dot(ambient, ambient) ? color : ambient;// max(color, ambient);
 	#endif
-	//color.rgb = clamp(color.rgb, (float3)0, albedo * saturate(light.color));
+	color.rgb = clamp(color.rgb, (float3)0, albedo * saturate(light.color));
 	
 	color.a = 1.f;
 	#if defined(_RENDERING_FADE) || defined(_RENDERING_TRANSPARENT)
