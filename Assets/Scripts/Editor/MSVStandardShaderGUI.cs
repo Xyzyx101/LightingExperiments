@@ -122,7 +122,7 @@ public class MSVStandardShaderGUI : ShaderGUI
         }
         //DoMetallic();
         //DoSmoothness();
-        //DoNormals();
+        DoNormals();
         //DoOcclusion();
         //DoEmission();
         //DoDetailMask();

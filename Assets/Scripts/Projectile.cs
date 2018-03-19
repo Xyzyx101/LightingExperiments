@@ -31,7 +31,6 @@ public class Projectile : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision) {
-        Debug.Log("Hit!!");
         if( !Hit ) {
             Hit = true;
             Destroy(this.gameObject, TimeToLive);

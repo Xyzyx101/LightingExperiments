@@ -8,8 +8,13 @@ public class SpriteShadows : MonoBehaviour {
     [SerializeField]
     private UnityEngine.Rendering.ShadowCastingMode CastShadows;
 
+    [SerializeField]
+    private bool ReceiveShadows;
+
     void Awake() {
         var rend = GetComponent<Renderer>();
         rend.shadowCastingMode = CastShadows;
+        rend.receiveShadows = ReceiveShadows;
+
     }
 }
