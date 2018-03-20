@@ -129,7 +129,7 @@ GameObject:
   m_Icon: {fileID: -3701561207968579530, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &12881416
 Light:
   m_ObjectHideFlags: 0
@@ -791,13 +791,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 214825094}
-  m_LocalRotation: {x: -0, y: -0.0357136, z: -0, w: 0.99936205}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.93, y: 1.28, z: 3.677}
   m_LocalScale: {x: 5.0043955, y: 2.0634933, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 47
-  m_LocalEulerAnglesHint: {x: 0, y: -4.0930004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &244027025
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &362451521
 Light:
   m_ObjectHideFlags: 0
@@ -1204,13 +1204,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 362451520}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: -0, y: 0.5219793, z: -0.8529582, w: 0}
   m_LocalPosition: {x: 0.75, y: 4.07, z: -0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 36
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 117.06999, y: 180, z: -0.000015258789}
 --- !u!1 &368527641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1617,7 @@ GameObject:
   - component: {fileID: 533274002}
   - component: {fileID: 533274005}
   - component: {fileID: 533274006}
+  - component: {fileID: 533274007}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -1707,6 +1708,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &533274007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 533274001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45f4ecdf46654253a353f3ebd73fc3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: 0.01
+  scale: 0.1
 --- !u!1 &549746888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1809,7 +1823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CastShadows: 2
-  ReceiveShadows: 0
+  ReceiveShadows: 1
 --- !u!114 &549746893
 MonoBehaviour:
   m_ObjectHideFlags: 0

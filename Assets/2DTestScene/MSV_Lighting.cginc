@@ -16,6 +16,8 @@ float _Smoothness;
 float _AlphaCutoff;
 float _BumpScale;
 
+sampler3D _DitherMaskLOD;
+
 struct VertexData {
 	float4 vertex : POSITION;
 	float2 uv : TEXCOORD0;
@@ -73,6 +75,13 @@ UnityLight CreateLight (Interpolators i) {
 	return light;
 }
 
+float DitherPoint(float3 worldPos, float intensity) {
+	float3 ditherCoords;
+	ditherCoords.xy = worldPos.xy;
+	ditherCoords.z = intensity;
+	return tex3D(_DitherMaskLOD, ditherCoords);
+}
+
 float4 frag (Interpolators i) : SV_TARGET {
 	// Pixel filter
 	float2 texel = i.uv*_MainTex_TexelSize.zw;
@@ -100,21 +109,18 @@ float4 frag (Interpolators i) : SV_TARGET {
 
 	// Normal
 	float lightBehind = DotClamped(i.normal, lightDir);
-	float3 tNormal = UnpackScaleNormal(tex2D(_NormalMap, i.uv), _BumpScale).xyz * 2.0 - 1.0;
+	float3 tNormal = UnpackScaleNormal(tex2D(_NormalMap, i.uv), _BumpScale).xyz;// * 2.0 - 1.0;
 	tNormal = tNormal.xzy;
-	float binormal = cross(i.normal, i.tangent.xyz) * (i.tangent.w * unity_WorldTransformParams.w);
+	float3 wNormal = normalize(i.normal);
+	float3 wTangent = normalize(i.tangent);
+	float binormal = cross(wNormal, wTangent) * (i.tangent.w * unity_WorldTransformParams.w);
 	i.normal = normalize(
 		tNormal.x * i.tangent +
 		tNormal.y * i.normal +
 		tNormal.z * binormal
 	);
-	i.normal = normalize(i.normal);
-	//return lightBehind;
-	//i.normal = lightBehind ? -i.normal : i.normal;
 	UnityLight light = CreateLight(i);
 	
-	return light.ndotl;
-
 	// Specular
 	//float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos);
 	//float3 halfVector = normalize(light.dir + viewDir);

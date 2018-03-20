@@ -8,12 +8,13 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: MSV_Player
   m_Shader: {fileID: 4800000, guid: 3201fe007c524b745bdcfdf197407bf1, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _NORMAL_MAP
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA _NORMAL_MAP _RENDERING_CUTOUT
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 2000
-  stringTagMap: {}
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
