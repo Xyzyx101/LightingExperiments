@@ -22,7 +22,6 @@ public class Ball : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) {
         if( other.gameObject.name == "Player" ) {
-            Debug.Log("Kick");
             Kick(other);
         }
     }

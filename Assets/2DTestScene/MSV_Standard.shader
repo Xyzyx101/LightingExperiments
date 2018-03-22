@@ -24,7 +24,7 @@
 			}
 			Blend [_SrcBlend] [_DstBlend]
 			ZWrite [_ZWrite]			
-			Cull Back			
+			Cull Off			
 
 			CGPROGRAM
 //DEBUG
@@ -49,7 +49,7 @@
 			}
 			Blend [_SrcBlend] One
 			ZWrite Off
-			Cull Back
+			Cull Off
 			
 			CGPROGRAM
 //DEBUG

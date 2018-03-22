@@ -35,6 +35,7 @@ struct Interpolators {
 		float3 vertexLightColor : TEXCOORD4;
 	#endif
 	SHADOW_COORDS(5)
+	float2 screenPos : TEXCOORD6;
 };
 
 void ComputeVertexLightColor (VertexData v, inout Interpolators i) {
@@ -55,9 +56,26 @@ Interpolators vert (VertexData v) {
 	i.uv = TRANSFORM_TEX(v.uv, _MainTex);
 	i.normal = UnityObjectToWorldNormal(v.normal);
 	i.tangent = float4(UnityObjectToWorldDir(v.tangent.xyz), v.tangent.w);
+	i.screenPos = ComputeScreenPos(i.pos);
 	TRANSFER_SHADOW(i);
 	ComputeVertexLightColor(v, i);
 	return i;
+}
+
+float DitherPoint(Interpolators i, float intensity) {
+	float3 ditherCoords;
+	
+	//World coords
+	//i.worldPos *= 16.0;
+	//ditherCoords.xy = i.worldPos.xz;
+	//ditherCoords.y += i.worldPos.y;
+	
+	//Screen coords
+	ditherCoords.xy = i.screenPos.xy * _ScreenParams.xy * 0.15;
+	
+
+	ditherCoords.z = intensity;
+	return tex3D(_DitherMaskLOD, ditherCoords).a;
 }
 
 UnityLight CreateLight (Interpolators i) {
@@ -67,20 +85,22 @@ UnityLight CreateLight (Interpolators i) {
 	#else
 		light.dir = _WorldSpaceLightPos0.xyz;
 	#endif
+
 	UNITY_LIGHT_ATTENUATION(attenuation, i, i.worldPos);
-	attenuation = floor(attenuation * 20.0) / 20.0;
+	//attenuation = floor(attenuation * 20.0) / 20.0;
+	float dither = DitherPoint(i, attenuation);
+	dither = max(dither - 0.85, 0.) + 0.85;
+	attenuation *= dither;
+	//attenuation = dither;
+	
 	light.color = _LightColor0.rgb * attenuation;
+
 	//light.ndotl = DotClamped(i.normal, light.dir);
 	light.ndotl = dot(i.normal, light.dir) * 0.5 + 0.5;
+
 	return light;
 }
 
-float DitherPoint(float3 worldPos, float intensity) {
-	float3 ditherCoords;
-	ditherCoords.xy = worldPos.xy;
-	ditherCoords.z = intensity;
-	return tex3D(_DitherMaskLOD, ditherCoords);
-}
 
 float4 frag (Interpolators i) : SV_TARGET {
 	// Pixel filter

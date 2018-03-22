@@ -19,12 +19,13 @@ public class Player : MonoBehaviour
         PlayerMovement = GetComponent<PlayerMovement>();
         Debug.Assert(PlayerMovement != null, "PlayerMovement script is missing");
 
-        PlayerMovement.Init(Body);
+        //PlayerMovement.Init(Body);
     }
 
     void Update() {
         // Moving
-        PlayerMovement.MSV_Update();
+        //PlayerMovement.MSV_Update();
+
         // Shooting
         if( MSV_Input.GetActionPressed(MSV_Action.Fire1) ) {
             Vector3 facing = PlayerMovement.GetFacing();
