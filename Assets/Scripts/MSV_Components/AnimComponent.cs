@@ -60,7 +60,6 @@ public class AnimComponent : MSV_Component
 
         Vector3 facing = Movement.GetFacing();
         float faceFloat = Mathf.Atan2(facing.x, facing.z) / Mathf.PI;
-        Debug.Log(facing);
         Anim.SetFloat(AnimParams.Facing, faceFloat);
     }
 }

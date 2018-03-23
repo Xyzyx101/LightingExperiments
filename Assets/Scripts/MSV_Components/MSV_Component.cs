@@ -32,16 +32,6 @@ public abstract class MSV_Component : MonoBehaviour, System.IComparable<MSV_Comp
         return _ParentActor;
     }
 
-
-
-    private MSV_Actor _OtherParentActor;
-    public void SetOtherParentActor(MSV_Actor actor) {
-        _OtherParentActor = actor;
-    }
-    public MSV_Actor GetOtherParentActor() {
-        return _OtherParentActor;
-    }
-
     public delegate void MSV_Awake();
     public delegate void MSV_Start();
     public delegate void MSV_Update();
