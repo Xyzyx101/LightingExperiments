@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class FSM<T> where T : class
 {
-    public delegate void StateEvent(FSM<T>fsm, T dataObj);
+    public delegate void StateEvent(FSM<T> fsm, T dataObj);
     private class State
     {
         public string Name;
@@ -16,23 +16,30 @@ public class FSM<T> where T : class
     private class SubState : State
     {
         public FSM<T> SubStateMachine;
-        public string DefaultState;
+        public StateEvent SubEnter;
+        public StateEvent SubUpdate;
+        public StateEvent SubExit;
         public SubState() {
             Enter = new StateEvent(SubstateEnter);
             Update = new StateEvent(SubstateUpdate);
             Exit = new StateEvent(SubstateExit);
+
         }
         private void SubstateEnter(FSM<T> fsm, T dataObj) {
-            SubStateMachine.ChangeState(DefaultState);
+            if( SubEnter != null ) {
+                SubEnter(fsm, dataObj);
+            }
         }
         private void SubstateUpdate(FSM<T> fsm, T dataObj) {
+            if( SubUpdate != null ) {
+                SubUpdate(fsm, dataObj);
+            }
             SubStateMachine.Update();
         }
         private void SubstateExit(FSM<T> fsm, T dataObj) {
-            if( SubStateMachine.CurrentState != null ) {
-                SubStateMachine.CurrentState.Exit(fsm, dataObj);
-                SubStateMachine.StateQueue.Clear();
-                SubStateMachine.CurrentState = null;
+            SubStateMachine.CurrentState = null;
+            if( SubExit != null ) {
+                SubExit(fsm, dataObj);
             }
         }
     }
@@ -71,9 +78,9 @@ public class FSM<T> where T : class
         }
     }
 
-    public void AddSubstate(string name, FSM<T> subStateMachine, string defaultSubState) {
+    public void AddSubstate(string name, FSM<T> subStateMachine, StateEvent enter, StateEvent update = null, StateEvent exit = null) {
         subStateMachine.DataObj = DataObj;
-        SubState newState = new SubState() { Name = name, SubStateMachine = subStateMachine, DefaultState = defaultSubState };
+        SubState newState = new SubState() { Name = name, SubStateMachine = subStateMachine, SubEnter = enter, SubUpdate = update, SubExit = exit };
         int index = AllStates.BinarySearch(newState, StaticStateNameComparer);
         if( index < 0 ) {
             AllStates.Insert(~index, newState);
@@ -83,9 +90,9 @@ public class FSM<T> where T : class
     }
 
     public void Update() {
-        Debug.Assert(NextState != null, "FSM nextState is null.  Always call change state in Start() to initialize state");
+        Debug.Assert(NextState != null, "FSM nextState is null.  You need to call change state at least once to set the initial state.");
         if( CurrentState == null || NextState.Name != CurrentState.Name ) {
-            QueueChangeEvents();
+            QueueEvents();
         }
         while( StateQueue.Count > 1 ) {
             StateQueue.Dequeue()(this, DataObj);
@@ -108,7 +115,26 @@ public class FSM<T> where T : class
         }
     }
 
-    void QueueChangeEvents() {
+    public void ChangeSubstate(string stateName) {
+        if( CurrentState is SubState ) {
+            var currentSubstate = CurrentState as SubState;
+            currentSubstate.SubStateMachine.ChangeState(stateName);
+        } else {
+            Debug.LogWarning("Current state is not a substate");
+        }
+    }
+
+    public string GetCurrentState() {
+        return CurrentState.Name;
+    }
+
+    void QueueEvents() {
+        if( CurrentState is SubState ) {
+            var subState = CurrentState as SubState;
+            if( subState.SubStateMachine.CurrentState.Exit != null ) {
+                StateQueue.Enqueue(subState.SubStateMachine.CurrentState.Exit);
+            }
+        }
         if( CurrentState != null && CurrentState.Exit != null ) {
             StateQueue.Enqueue(CurrentState.Exit);
         }

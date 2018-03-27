@@ -87,11 +87,14 @@ UnityLight CreateLight (Interpolators i) {
 	#endif
 
 	UNITY_LIGHT_ATTENUATION(attenuation, i, i.worldPos);
-	//attenuation = floor(attenuation * 20.0) / 20.0;
+
+	// Banded attenuation
+	//attenuation = floor(attenuation * 50.0) / 50.0;
+	
+	// Dith attenuation
 	float dither = DitherPoint(i, attenuation);
-	dither = max(dither - 0.85, 0.) + 0.85;
+	dither = max(dither - 0.8, 0.) + 0.8;
 	attenuation *= dither;
-	//attenuation = dither;
 	
 	light.color = _LightColor0.rgb * attenuation;
 

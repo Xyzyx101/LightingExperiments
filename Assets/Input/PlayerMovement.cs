@@ -18,8 +18,10 @@ public class PlayerMovement : MSV_Component
     private float JumpVelocity = 4.0f;
 
     private Rigidbody RB;
+    private CapsuleCollider CapCollider;
 
     private Vector3 Facing;
+    private float _FloorDistance;
 
     override public int Priority {
         get {
@@ -32,7 +34,7 @@ public class PlayerMovement : MSV_Component
             return new MSV_Awake(Move_Awake);
         }
     }
-       
+
     override public MSV_Update UpdateDelegate {
         get {
             return new MSV_Update(Move_Update);
@@ -40,8 +42,11 @@ public class PlayerMovement : MSV_Component
     }
 
     public void Move_Awake() {
+        Facing = Vector3.back;
         RB = GetParentActor().GetComponentInChildren<Rigidbody>();
         Debug.Assert(RB != null, "Rigid body not found.  PlayerMovement will not work.");
+        CapCollider = GetParentActor().GetComponentInChildren<CapsuleCollider>();
+        Debug.Assert(CapCollider != null, "Capsule Collider is not found.  PlayerMovement will break.");
     }
 
     public void Move_Update() {
@@ -66,6 +71,11 @@ public class PlayerMovement : MSV_Component
                 RB.AddForce(Deceleration * -horizontalVel, ForceMode.Acceleration);
             }
         }
+        UpdateFloorDistance();
+
+        if( MSV_Input.GetActionPressed(MSV_Action.Jump) && IsOnGround) {
+            RB.AddForce(JumpVelocity * Vector3.up, ForceMode.VelocityChange);
+        }
 
         // Limit Max Velocity
         if( RB.velocity.x * RB.velocity.x + RB.velocity.z * RB.velocity.z > MaxVelocity * MaxVelocity ) {
@@ -73,13 +83,32 @@ public class PlayerMovement : MSV_Component
             horizontalVel = horizontalVel.normalized * MaxVelocity;
             RB.velocity = new Vector3(horizontalVel.x, RB.velocity.y, horizontalVel.y); // those two Ys are not a typo
         }
-
-        if(MSV_Input.GetActionPressed(MSV_Action.Jump)) {
-            RB.AddForce(JumpVelocity * Vector3.up, ForceMode.VelocityChange);
-        }
     }
 
     public Vector3 GetFacing() {
         return Facing;
+    }
+
+    public bool IsOnGround {
+        get {
+            return _FloorDistance < 0.1f;
+        }
+    }
+    public float FloorDistance {
+        get {
+            return _FloorDistance;
+        }
+    }
+    private void UpdateFloorDistance() {
+        const float errorOffset = 0.2f;
+        Vector3 startOffset = CapCollider.center + Vector3.down * 0.5f * CapCollider.height + Vector3.up * errorOffset;
+        Vector3 origin = transform.position + startOffset;
+        RaycastHit hit;
+        const float maxDistance = 0.5f;
+        if( Physics.Raycast(origin, Vector3.down, out hit, maxDistance) ) {
+            _FloorDistance = hit.distance - errorOffset; 
+        } else {
+            _FloorDistance = float.PositiveInfinity;
+        }
     }
 }

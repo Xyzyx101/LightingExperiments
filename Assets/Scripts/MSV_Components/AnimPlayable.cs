@@ -42,7 +42,15 @@ public class AnimPlayable : MSV_Component
 
     }
 
-    //private void AnimUpdate() {
-    //    throw new NotImplementedException();
-    //}
+    private void AnimUpdate() {
+        throw new NotImplementedException();
+    }
+
+    void OnDisable() {
+
+        // Destroys all Playables and PlayableOutputs created by the graph.
+
+        playableGraph.Destroy();
+
+    }
 }
