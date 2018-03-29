@@ -73,6 +73,9 @@ public class FSM<T> where T : class
         int index = AllStates.BinarySearch(newState, StaticStateNameComparer);
         if( index < 0 ) {
             AllStates.Insert(~index, newState);
+            if( NextState == null ) {
+                NextState = newState;
+            }
         } else {
             Debug.LogWarning("State " + name + " already exist and cannot be added.");
         }
@@ -84,6 +87,9 @@ public class FSM<T> where T : class
         int index = AllStates.BinarySearch(newState, StaticStateNameComparer);
         if( index < 0 ) {
             AllStates.Insert(~index, newState);
+            if( NextState == null ) {
+                NextState = newState;
+            }
         } else {
             Debug.LogWarning("State " + name + " already exist and cannot be added.");
         }
@@ -103,12 +109,16 @@ public class FSM<T> where T : class
     }
 
     public void ChangeState(string stateName) {
+        if( CurrentState != null && CurrentState.Name == stateName ) { return; }
         if( StateQueue.Count > 0 ) {
             StateQueue.Dequeue();
         }
         SearchDummy.Name = stateName;
         int index = AllStates.BinarySearch(SearchDummy, StaticStateNameComparer);
         if( index >= 0 ) {
+            if( AllStates[index] == null ) {
+                Debug.Break();
+            }
             NextState = AllStates[index];
         } else {
             Debug.LogError("State " + stateName + " does not exist");

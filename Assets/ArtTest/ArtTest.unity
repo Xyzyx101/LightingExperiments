@@ -3532,6 +3532,39 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 691039630}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &761965015 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1579020469392272, guid: 5c28d1825ce3d6a4c820069cd3b78f46,
+    type: 2}
+  m_PrefabInternal: {fileID: 985881440}
+--- !u!114 &761965022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761965015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195e198751de743478b34f3d214f83aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clips:
+  - {fileID: 7400000, guid: 4f84d5c53612c3b48ac983746ebd6ffe, type: 2}
+  - {fileID: 7400000, guid: 9c144472b89dfc442bfd305690bb5e02, type: 2}
+  - {fileID: 7400000, guid: 5e1a7025745bf864dbb99416b79afa8e, type: 2}
+  - {fileID: 7400000, guid: ed3665a7f51f0894cacfa3d7641cddc0, type: 2}
+  - {fileID: 7400000, guid: e322c1bfab564e04982dbe1b769ee13a, type: 2}
+  - {fileID: 7400000, guid: 269754681ec0a6342bc7b8d31efff6e0, type: 2}
+  - {fileID: 7400000, guid: 44814c25c22d7934e97bda04feab81aa, type: 2}
+  - {fileID: 7400000, guid: 4910970ba1d90e242beedb13c32420e2, type: 2}
+  - {fileID: 7400000, guid: 5ea88899e1ed66949b239a597ab51302, type: 2}
+  - {fileID: 7400000, guid: d4c6b7fed2033e24c90590ce7c6b0b66, type: 2}
+  - {fileID: 7400000, guid: 9aca5a29df21b2d4c80ae2499a7a7f3b, type: 2}
+  - {fileID: 7400000, guid: 0204c72f319a15a45b5dbeedd76ff076, type: 2}
+  - {fileID: 7400000, guid: 010a647748c0f4944b20cf4ea416ab22, type: 2}
+  - {fileID: 7400000, guid: 58d43c32b1584fe4bb44c2e168dc193c, type: 2}
+  - {fileID: 7400000, guid: b3a865ed8fe09254e8f8bea61c37f47b, type: 2}
+  - {fileID: 7400000, guid: c99b0bb5013e58b4a8952f717576687f, type: 2}
 --- !u!1 &774099750
 GameObject:
   m_ObjectHideFlags: 0
@@ -4187,7 +4220,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4906677083059148, guid: 5c28d1825ce3d6a4c820069cd3b78f46, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.937
+      value: 1.574
       objectReference: {fileID: 0}
     - target: {fileID: 4906677083059148, guid: 5c28d1825ce3d6a4c820069cd3b78f46, type: 2}
       propertyPath: m_LocalPosition.y
@@ -4228,6 +4261,25 @@ Prefab:
       value: 
       objectReference: {fileID: 7400000, guid: 58d43c32b1584fe4bb44c2e168dc193c, type: 2}
     - target: {fileID: 95197302451236704, guid: 5c28d1825ce3d6a4c820069cd3b78f46,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1579020469392272, guid: 5c28d1825ce3d6a4c820069cd3b78f46, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114118968643288150, guid: 5c28d1825ce3d6a4c820069cd3b78f46,
+        type: 2}
+      propertyPath: RunSide
+      value: 
+      objectReference: {fileID: 7400000, guid: 9aca5a29df21b2d4c80ae2499a7a7f3b, type: 2}
+    - target: {fileID: 114118968643288150, guid: 5c28d1825ce3d6a4c820069cd3b78f46,
+        type: 2}
+      propertyPath: IdleSide
+      value: 
+      objectReference: {fileID: 7400000, guid: ed3665a7f51f0894cacfa3d7641cddc0, type: 2}
+    - target: {fileID: 114119892058049138, guid: 5c28d1825ce3d6a4c820069cd3b78f46,
         type: 2}
       propertyPath: m_Enabled
       value: 1
@@ -5609,7 +5661,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1240872355}
   - component: {fileID: 1240872354}
-  - component: {fileID: 1240872353}
   - component: {fileID: 1240872352}
   - component: {fileID: 1240872351}
   m_Layer: 0
@@ -5666,20 +5717,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1240872353
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1240872350}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &1240872354
 MeshFilter:
   m_ObjectHideFlags: 0

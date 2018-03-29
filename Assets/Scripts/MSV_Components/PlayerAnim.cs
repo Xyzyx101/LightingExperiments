@@ -7,28 +7,12 @@ using UnityEngine.Animations;
 
 public class PlayerAnim : MSV_Component
 {
-    [SerializeField]
-    private AnimationClip IdleForward;
-    [SerializeField]
-    private AnimationClip IdleBack;
-    [SerializeField]
-    private AnimationClip IdleSide;
-    [SerializeField]
-    private AnimationClip RunForward;
-    [SerializeField]
-    private AnimationClip RunBack;
-    [SerializeField]
-    private AnimationClip RunSide;
-    [SerializeField]
-    private AnimationClip Jump;
-
     const float OneOverPI = 1.0f / Mathf.PI;
     FSM<MSV_Actor> FSM;
     PlayerMovement Movement;
-    Animator Anim;
+    MSV_Animator Anim;
     Rigidbody RB;
 
-    PlayableGraph PlayableGraph;
     SpriteRenderer SpriteRend;
 
     override public int Priority {
@@ -56,9 +40,10 @@ public class PlayerAnim : MSV_Component
     }
 
     private void AnimAwake() {
+        Debug.Log("AnimAwake");
         FSM = new FSM<MSV_Actor>(GetParentActor());
-        Anim = GetParentActor().GetComponentInChildren<Animator>();
-        Debug.Assert(Anim != null, "Animator not found.  Player Animation will not work.");
+        Anim = GetParentActor().GetComponentInChildren<MSV_Animator>();
+        Debug.Assert(Anim != null, "MSV_Animator not found.  Player Animation will not work.");
         RB = GetParentActor().GetComponentInChildren<Rigidbody>();
         Debug.Assert(RB != null, "Rigid body not found.  Player Animation will not work.");
         Movement = GetParentActor().GetComponentInChildren<PlayerMovement>();
@@ -66,34 +51,17 @@ public class PlayerAnim : MSV_Component
         SpriteRend = GetParentActor().GetComponentInChildren<SpriteRenderer>();
         Debug.Assert(Movement != null, "SpriteRenderer not found.  Player Animation will not work.");
 
-        InitPlayableGraph();
         SetupStateMachineStates();
     }
 
     private void AnimStart() {
-        Debug.Log("AnimStart");
-        //PlayClip(IdleBack);
+        //Debug.Log("AnimStart");
     }
 
     private void AnimUpdate() {
-        PlayableGraph.Evaluate(Time.deltaTime);
-
-        /// FIXME!!!!!!!!!!!!!!!!!!!!!
-        //FSM.Update();
-    }
-
-    private void InitPlayableGraph() {
-        PlayableGraph = PlayableGraph.Create();
-        PlayableGraph.SetTimeUpdateMode(DirectorUpdateMode.Manual);
-        var playableOutput = AnimationPlayableOutput.Create(PlayableGraph, "Animation", Anim);
-        var clipPlayable = AnimationClipPlayable.Create(PlayableGraph, Jump);
-        playableOutput.SetSourcePlayable(clipPlayable);
-        PlayableGraph.Play();
-        GraphVisualizerClient.Show(PlayableGraph, "PlayerAnim");
-    }
-
-    private void PlayClip(AnimationClip clip) {
-        AnimationPlayableUtilities.PlayClip(Anim, clip, out PlayableGraph);
+        //Debug.Log("AnimUpdate");
+        FSM.Update();
+        //Anim.DebugUpdate();
     }
 
     private void SetupStateMachineStates() {
@@ -138,20 +106,20 @@ public class PlayerAnim : MSV_Component
     }
 
     private void IdleForward_Enter(FSM<MSV_Actor> actor, MSV_Actor parent) {
-        PlayClip(IdleForward);
+        Anim.Play("idleForward");
     }
     private void IdleBack_Enter(FSM<MSV_Actor> actor, MSV_Actor parent) {
-        PlayClip(IdleBack);
+        Anim.Play("idleBack");
     }
     private void IdleLeft_Enter(FSM<MSV_Actor> actor, MSV_Actor parent) {
         SpriteRend.flipX = true;
-        PlayClip(IdleLeft);
+        Anim.Play("idleSide");
     }
     private void IdleLeft_Exit(FSM<MSV_Actor> actor, MSV_Actor parent) {
         SpriteRend.flipX = false;
     }
     private void IdleRight_Enter(FSM<MSV_Actor> actor, MSV_Actor parent) {
-        PlayClip(IdleRight);
+        Anim.Play("idleSide");
     }
 
     private void Run_Update(FSM<MSV_Actor> fsm, MSV_Actor parent) {
@@ -175,44 +143,37 @@ public class PlayerAnim : MSV_Component
     }
 
     private void RunForward_Enter(FSM<MSV_Actor> fsm, MSV_Actor parent) {
-        PlayClip(RunForward);
+        Anim.Play("runForward");
     }
     private void RunLeft_Enter(FSM<MSV_Actor> fsm, MSV_Actor parent) {
         SpriteRend.flipX = true;
-        PlayClip(RunLeft);
+        Anim.Play("runSide");
     }
     private void RunLeft_Exit(FSM<MSV_Actor> fsm, MSV_Actor parent) {
         SpriteRend.flipX = false;
     }
     private void RunRight_Enter(FSM<MSV_Actor> fsm, MSV_Actor parent) {
-        PlayClip(RunRight);
+        Anim.Play("runSide");
     }
     private void RunBack_Enter(FSM<MSV_Actor> fsm, MSV_Actor parent) {
-        PlayClip(RunBack);
+        Anim.Play("runBack");
     }
 
     private void Jump_Enter(FSM<MSV_Actor> fsm, MSV_Actor parent) {
-
+        Debug.Log("enter jump");
+        Anim.Play("sideJump");
+        Anim.PauseAnim("sideJump");
     }
     private void Jump_Update(FSM<MSV_Actor> fsm, MSV_Actor parent) {
         float upFactor = -RB.velocity.y * 0.333f * 0.5f + 0.5f;
+        //Debug.Break();
         Debug.Log(RB.velocity.y + " " + upFactor);
         if( Movement.IsOnGround ) {
             FSM.ChangeState("Idle");
         }
-        //PlayableGraph.Evaluate(Jump.length * 0.5f);
-        PlayableGraph.Evaluate(Time.deltaTime);
-        //Jump.length;
-
+        Anim.SetTime01("sideJump", upFactor);
     }
     private void Jump_Exit(FSM<MSV_Actor> fsm, MSV_Actor parent) {
-        PlayableGraph.SetTimeUpdateMode(DirectorUpdateMode.GameTime);
         Debug.Log("exit jump");
-        //PlayableGraph.Evaluate(Jump.length);
-    }
-
-    void OnDisable() {
-        // Destroys all Playables and PlayableOutputs created by the graph.
-        PlayableGraph.Destroy();
     }
 }

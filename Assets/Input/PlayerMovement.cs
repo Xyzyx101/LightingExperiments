@@ -91,7 +91,7 @@ public class PlayerMovement : MSV_Component
 
     public bool IsOnGround {
         get {
-            return _FloorDistance < 0.1f;
+            return _FloorDistance < 0.05f;
         }
     }
     public float FloorDistance {
