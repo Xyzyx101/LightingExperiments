@@ -9,6 +9,8 @@ public class MSV_Animator : MSV_Component
 {
     [SerializeField]
     AnimationClip[] Clips;
+    [SerializeField]
+    int _Priority = -1000;
 
     Animator Anim;
     PlayableGraph PlayableGraph;
@@ -17,7 +19,7 @@ public class MSV_Animator : MSV_Component
 
     override public int Priority {
         get {
-            return -1000;
+            return _Priority;
         }
     }
 
@@ -25,11 +27,6 @@ public class MSV_Animator : MSV_Component
         get {
             return new MSV_Awake(AnimatorAwake);
         }
-    }
-
-    public void DebugUpdate() {
-        //var x = PlayableGraph.GetTimeUpdateMode();
-        //Debug.Log(x);
     }
 
     public void Play(string name) {

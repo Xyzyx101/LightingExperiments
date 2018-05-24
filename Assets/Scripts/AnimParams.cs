@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AnimParams  {
+public class AnimParams
+{
     //static int _SideSpeed = int.MinValue;
     //public static int SideSpeed {
     //    get {
